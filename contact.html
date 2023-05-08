@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Lato&family=Lilita+One&family=Montez&family=Montserrat:wght@100;400;900&family=Open+Sans:ital,wght@0,400;1,300&family=Roboto:ital@0;1&family=Sacramento&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav class="nav-container">
+        <div class="image-container">
+            <img src="images/logo.jpg">
+        </div>
+        <div class="hamburger">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#" target="_blank" class="links">Home</a></li>
+            <li><a href="about.html" target="_blank" class="links">About</a></li>
+            <li><a href="#" target="_blank" class="links">Gallery</a></li>
+            <li><a href="contact.html" target="_blank" class="links">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="top-cont">
+            <h1>Let's get in touch</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis aliquam magna et porttitor.
+                Vestibulum et tempus nisl, a consequat dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean cursus vel tellus ac pretium. Integer a risus tristique, lacinia velit at, faucibus nisi. Ut
+                ipsum orci, consequat at rutrum non, molestie et ex. Etiam ante augue, ornare quis posuere eget,
+                porttitor pretium urna. Praesent vehicula mi a purus eleifend, non aliquet nulla commodo. Curabitur
+                turpis lectus, viverra eu nisi vitae, congue congue metus. Aenean in tellus leo. Nulla semper molestie
+                mauris, non hendrerit tortor dictum sit amet. Suspendisse lobortis libero vel mi bibendum consectetur.
+                Aenean cursus ex ut dictum fringilla. Duis egestas accumsan dapibus.</p>
+
+        </section>
+        <div class="contact-container">
+            <form>
+                <fieldset>
+                    <label class="fieldName" for="name">Name</label>
+                    <input class="input-block" type="text" id="name" placeholder="Your name" required>
+
+                    <label class="fieldName" for="lastname">Last name</label>
+                    <input class="input-block" type="text" id="lastname" placeholder="Your last name" required>
+
+                    <label class="fieldName" for="email">Email</label>
+                    <input class="input-block" type="email" id="email" placeholder="yourmail@example.com" required>
+
+                    <label class="fieldName" for="phone">Phone Number</label>
+                    <input class="input-block" type="tel" id="phone" placeholder="(code) xxxx xxxx" required>
+
+                    <label class="fieldName" for="message">Send a message</label>
+                    <textarea class="input-block" id="message" style="height:150px"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <div class="contact-select">
+                        <legend>How would you like to be contacted?</legend>
+                        <div class="select-container">
+                            <label class="select-name" for="radio-mail"><input id="radio-mail" type="radio"
+                                    value="email" name="contact">
+                                Email</label>
+
+                            <label class="select-name" for="radio-whatsapp"><input id="radio-whatsapp" type="radio"
+                                    value="whatsapp" name="contact" checked>
+                                Whatsapp</label>
+
+                            <label class="select-name" for="radio-phone"><input id="radio-phone" type="radio"
+                                    value="phonecall" name="contact">
+                                Phone
+                                call</label>
+                        </div>
+                    </div>
+                    <div class="contact-hour">
+                        <legend>Wich time of the day would you prefer us to reach you?</legend>
+                        <select>
+                            <option>Mornings</option>
+                            <option>Afternoons</option>
+                            <option>Nights</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Would you like to receive informacion about us?<input type="checkbox" checked></label>
+                    </div>
+                </fieldset>
+                <div>
+                    <button id="submit" class="btn" type="submit">Submit</button>
+                    <button id="reset" class="btn" type="reset">Reset</button>
+                </div>
+            </form>
+
+            <table>
+                <div class="tableTitle">
+                    <p>Opening hours</p>
+                </div>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hour</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>8am - 6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8am - 6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>8am - 6 pm</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="tFooter">*Attention hours may change without notice, please call for confirmation.</p>
+
+        </div>
+    </main>
+
+    <footer>
+        <img class="footerImg" src="page 2 images/footerIMG.jpg" alt="footer icon">
+        <p class="copyright">&copy Copyright M.C.A 2023</p>
+    </footer>
+
+<script src="app.js"></script>
+</body>
+
+</html>
